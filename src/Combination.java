@@ -28,10 +28,12 @@ public class Combination {
 	 */
 	public static <T,S> String display(Vector<Pair<T,S>> pairVect){
 		String out="";
+		
 		Iterator<Pair<T, S>> it = pairVect.iterator(); 
 		while(it.hasNext()){
 			Pair<T,S> cursor= ((Pair<T, S>)it.next());
 			out+= cursor.getFirst() + "," +cursor.getSecond() + "\n"; 
+			
 		}
 		return out;
 	}
